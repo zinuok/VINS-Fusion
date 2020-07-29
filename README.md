@@ -1,11 +1,12 @@
-# VINS-Fusion
+# VINS-Fusion (CPU version)
 + VINS-Fusion setup for following nvidia boards
     + jetson TX2 - Jetpack 4.2
     + jetson Xavier NX - Jetpack 4.4
 + version info
     + Ubuntu: 18.04 
     + ROS: Melodic 
-+ github link: [here](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)
++ description for VINS-Fusion CPU version
++ github link: [here](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 <br>
 
 # Index
@@ -45,7 +46,7 @@ $ make install
 + git clone and build from source
 ```
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/HKUST-Aerial-Robotics/VINS-Mono.git
+$ git clone https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git
 $ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j3
 $ source ~/catkin_ws/devel/setup.bash
 ```
