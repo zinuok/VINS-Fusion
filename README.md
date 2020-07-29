@@ -18,7 +18,7 @@
 ####    ● Actually, there is no installation difference between TX2 and NX
 <br><br>
 
-# 1. Prerequisites
+## 1. Prerequisites
 ### ● Eigen
 + Eigen from [here](http://eigen.tuxfamily.org/index.php?title=Main_Page)
 ```
@@ -42,7 +42,7 @@ $ make install
 ```
 <br><br>
 
-# 2. Installation
+## 2. Installation
 + git clone and build from source
 ```
 $ cd ~/catkin_ws/src
@@ -52,6 +52,6 @@ $ source ~/catkin_ws/devel/setup.bash
 ```
 <br><br>
 
-### 3. TX2, NX
+## 3. TX2, NX
 #### ● Actually, there is no installation difference between TX2 and NX
 
