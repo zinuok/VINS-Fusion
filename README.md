@@ -1,23 +1,27 @@
+***
 # VINS-Fusion (CPU version)
-+ VINS-Fusion setup for following nvidia boards
++ **hardware setup**
     + jetson TX2 - Jetpack 4.2
     + jetson Xavier NX - Jetpack 4.4
-+ version info
+    + realsense D435i (color, infra1, infra2)
+    + pixhawk4 mini
+    <br>
++ **software setup**
     + Ubuntu: 18.04 
     + ROS: Melodic 
-+ description for VINS-Fusion CPU version
-+ github link: [HKUST-Aerial-Robotics](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
+    <br>
++ **github link**: [HKUST-Aerial-Robotics](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
+***
 <br>
 
 # Index
 ### 1. Prerequisites
-
-####    ● Eigen
-
-####    ● Ceres solver
+####    &nbsp;&nbsp;&nbsp;&nbsp;● Eigen
+####    &nbsp;&nbsp;&nbsp;&nbsp;● Ceres solver
 ### 2. Installation
 ### 3. TX2, NX
-####    ● Actually, there is no installation difference between TX2 and NX
+####    &nbsp;&nbsp;&nbsp;&nbsp;● Actually, there is no installation difference between TX2 and NX
+### 4. Run
 <br><br>
 
 ## 1. Prerequisites
@@ -56,4 +60,15 @@ $ source ~/catkin_ws/devel/setup.bash
 
 ## 3. TX2, NX
 #### ● Actually, there is no installation difference between TX2 and NX
+<br><br>
+
+## 4. Run
+#### ● you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
+```
+$ roslaunch realsense2_camera rs_camera.launch
+$ roslaunch mavros px4.launch
+$ rosrun vins vins_node [path of realsense_stereo_imu_config.yaml]
+$ rosrun loop_fusion loop_fusion_node [path of realsense_stereo_imu_config.yaml]
+$ roslaunch vins vins_rviz.launch
+```
 
