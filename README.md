@@ -10,7 +10,7 @@
 
 # Index
 ### 1. Prerequisites
-#### ● Eigen (build Eigen first)
+    #### ● Eigen (build Eigen first)
 #### ● Ceres solver
 ### 2. Installation
 ### 3. TX2, NX
