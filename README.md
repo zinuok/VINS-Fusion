@@ -18,7 +18,7 @@
 ### 1. Prerequisites
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Eigen
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Ceres solver
-### 2. Installation
+### 2. Install
 ### 3. TX2, NX
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Actually, there is no installation difference between TX2 and NX
 ### 4. Run
@@ -48,7 +48,7 @@ $ make install
 ```
 <br><br>
 
-## 2. Installation
+## 2. Install
 + git clone and build from source
 ```
 $ cd ~/catkin_ws/src
