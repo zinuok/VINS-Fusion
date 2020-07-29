@@ -6,7 +6,7 @@
     + Ubuntu: 18.04 
     + ROS: Melodic 
 + description for VINS-Fusion CPU version
-+ github link: [here](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
++ github link: [HKUST-Aerial-Robotics](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 <br>
 
 # Index
