@@ -46,7 +46,7 @@ $ tar zxf ceres-solver-1.14.0.tar.gz
 $ cd ceres-solver-1.14.0
 $ mkdir build && cd build
 $ cmake -DEXPORT_BUILD_DIR=ON \
-        -DCMAKE_INSTALL_PREFIX=/usr/local/include \
+        -DCMAKE_INSTALL_PREFIX=/usr/local \
         ../
 $ make -j8 # 8 : number of cores
 $ make test
