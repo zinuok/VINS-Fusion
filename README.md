@@ -77,13 +77,13 @@ $ git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
 ```
 
 + edit following CMakeLists.txt (from [engcang](https://github.com/engcang/vins-application#-opencv-with-cuda--necessary-for-gpu-version-1))
-    1) ~/VINS-Mono/loop_fusion/CMakeLists.txt : line 19
-        #find_package(OpenCV)
-        => include(/usr/local/share/OpenCV/OpenCVConfig.cmake)
+    1) ~/VINS-Mono/loop_fusion/CMakeLists.txt : line 19 <br>
+        #find_package(OpenCV) <br>
+        => include(/usr/local/share/OpenCV/OpenCVConfig.cmake) <br><br>
 
-    2) ~/VINS-Mono/vins_estimator/CMakeLists.tx: line 20
-        #find_package(OpenCV REQUIRED)
-        => include(/usr/local/share/OpenCV/OpenCVConfig.cmake)
+    2) ~/VINS-Mono/vins_estimator/CMakeLists.tx: line 20 <br>
+        #find_package(OpenCV REQUIRED) <br>
+        => include(/usr/local/share/OpenCV/OpenCVConfig.cmake) <br><br>
 
 
 + catkin build
