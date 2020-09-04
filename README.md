@@ -69,10 +69,27 @@ $ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j3
 $ source ~/catkin_ws/devel/setup.bash
 ```
 + GPU version: for more information, refer [engcang](https://github.com/engcang/vins-application#-opencv-with-cuda--necessary-for-gpu-version-1)
+
+++ download
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
-$ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j3
+```
+
+++ edit following CMakeLists.txt (from [engcang](https://github.com/engcang/vins-application#-opencv-with-cuda--necessary-for-gpu-version-1))
++++1) ~/VINS-Mono/loop_fusion/CMakeLists.txt : line 19
+#find_package(OpenCV)
+=> include(/usr/local/share/OpenCV/OpenCVConfig.cmake)
+
++++2) ~/VINS-Mono/vins_estimator/CMakeLists.tx: line 20
+#find_package(OpenCV REQUIRED)
+=> include(/usr/local/share/OpenCV/OpenCVConfig.cmake)
+
+
+++ catkin build
+```
+$ cd ~/catkin_ws/
+$ catkin build -DCMAKE_BUILDTYPE=Release -j3
 $ source ~/catkin_ws/devel/setup.bash
 ```
 <br><br>
