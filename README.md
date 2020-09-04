@@ -68,7 +68,7 @@ $ git clone https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git
 $ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j3
 $ source ~/catkin_ws/devel/setup.bash
 ```
-+ GPU version: to use GPU version, you need to build **cv_bridge**. For ROS melodic, download from [here](https://github.com/ros-perception/vision_opencv/tree/melodic) and do catkin build. For more information, refer [engcang](https://github.com/engcang/vins-application#-opencv-with-cuda--necessary-for-gpu-version-1)
++ GPU version: for more information, refer [engcang](https://github.com/engcang/vins-application#-opencv-with-cuda--necessary-for-gpu-version-1)
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
