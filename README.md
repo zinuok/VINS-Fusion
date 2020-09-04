@@ -43,12 +43,14 @@ $ cmake ../ && sudo make install
 $ sudo apt-get install -y cmake libgoogle-glog-dev libatlas-base-dev libsuitesparse-dev
 $ wget http://ceres-solver.org/ceres-solver-1.14.0.tar.gz
 $ tar zxf ceres-solver-1.14.0.tar.gz
-$ mkdir ceres-bin
-$ mkdir solver && cd ceres-bin
-$ cmake ../ceres-solver-1.14.0 -DEXPORT_BUILD_DIR=ON -DCMAKE_INSTALL_PREFIX="../solver"  #good for build without being root privileged and at wanted directory
+$ cd ceres-solver-1.14.0
+$ mkdir build && cd build
+$ cmake -DEXPORT_BUILD_DIR=ON \
+        -DCMAKE_INSTALL_PREFIX=/usr/local/include \
+        ../
 $ make -j8 # 8 : number of cores
 $ make test
-$ make install
+$ sudo make install
 ```
 
 ### ● cv_bridge
