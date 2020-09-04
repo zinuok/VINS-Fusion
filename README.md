@@ -52,7 +52,7 @@ $ make install
 ```
 
 ### ● cv_bridge
-+ if you built OpenCV manually, you should also build 'cv_bridge' manually from source.
++ if you built OpenCV manually (refer [here](https://github.com/zinuok/Xavier_NX#1-opencv-ver-341-install)), you should also build 'cv_bridge' manually from source.
 + Download from proper branch in [here](https://github.com/ros-perception/vision_opencv/tree/melodic) according to your ROS version. For example,
 ```
 $ cd ~/catkin_ws/src
