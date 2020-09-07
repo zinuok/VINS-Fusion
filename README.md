@@ -35,7 +35,7 @@
 $ wget -O eigen.zip http://bitbucket.org/eigen/eigen/get/3.3.7.zip # <= do not download from this. 
 $ unzip eigen-3.3.7.zip
 $ cd ~/eigen-3.3.7 && mkdir build && build
-$ cmake ../ && sudo make install
+$ cmake ../ && sudo make install -j $(nproc)
 ```
 ### ● Ceres solver
 + Ceres solver from [here](http://ceres-solver.org/installation.html)
@@ -48,9 +48,9 @@ $ mkdir build && cd build
 $ cmake -DEXPORT_BUILD_DIR=ON \
         -DCMAKE_INSTALL_PREFIX=/usr/local \
         ../
-$ make -j8 # 8 : number of cores
-$ make test
-$ sudo make install
+$ make -j $(nproc) # number of cores
+$ make test -j $(nproc)
+$ sudo make install -j $(nproc)
 ```
 
 ### ● cv_bridge
