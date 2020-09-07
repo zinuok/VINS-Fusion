@@ -91,7 +91,7 @@ $ git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
 + catkin build
 ```
 $ cd ~/catkin_ws/
-$ catkin build -DCMAKE_BUILDTYPE=Release -j3
+$ catkin build -DCMAKE_BUILDTYPE=Release -j $(nproc)
 $ source ~/catkin_ws/devel/setup.bash
 ```
 <br><br>
