@@ -24,9 +24,9 @@
 ### 2. Install
 ### 3. Jetson Boards
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Actually, there is no installation difference among TX2, Xavier, and NX
+### 4. Run
 #### ● Uploaded folders for following setup: D435i, pixhawk4 mini 
 #### ● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
-### 4. Run
 <br><br>
 
 ## 1. Prerequisites
