@@ -23,8 +23,9 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Ceres solver
 ### 2. Install
 ### 3. Jetson Boards
-####    &nbsp;&nbsp;&nbsp;&nbsp;● Actu#### ● Uploaded folders for following setup: D435i, pixhawk4 mini 
-#### ● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)ally, there is no installation difference among TX2, Xavier, and NX
+####    &nbsp;&nbsp;&nbsp;&nbsp;● Actually, there is no installation difference among TX2, Xavier, and NX
+#### ● Uploaded folders for following setup: D435i, pixhawk4 mini 
+#### ● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
 ### 4. Run
 <br><br>
 
