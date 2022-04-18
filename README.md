@@ -34,8 +34,8 @@
 + Use below command or manually download eigen-3.3.9.zip from [here](http://eigen.tuxfamily.org/index.php?title=Main_Page)
 ```
 $ wget -O eigen-3.3.9.zip https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.zip 
-$ unzip eigen-3.3.7.zip
-$ cd ~/eigen-3.3.7 && mkdir build && cd build
+$ unzip eigen-3.3.9.zip
+$ cd ~/eigen-3.3.9 && mkdir build && cd build
 $ cmake ../ && sudo make install -j $(nproc)
 ```
 ### ● Ceres solver
