@@ -23,7 +23,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Ceres solver
 ### 2. Install
 ### 3. Jetson Boards
-####    &nbsp;&nbsp;&nbsp;&nbsp;● Actually, there is no installation difference among TX2, Xavier, and NX
+####    &nbsp;&nbsp;&nbsp;&nbsp;● If you encounter OpenCV related errors like 'cv::XX was not declared~', copy [these custom define]() into the proper C++ files. Actually, there is no installation difference among TX2, Xavier, and NX
 ### 4. Run
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Uploaded folders for following setup: D435i, pixhawk4 mini 
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
